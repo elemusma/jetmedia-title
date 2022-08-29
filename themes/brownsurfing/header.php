@@ -18,7 +18,7 @@ if(get_field('custom_css')) {
 <body <?php body_class(); ?>>
 <?php if(get_field('body','options')) { the_field('body','options'); }
 echo '<div class="blank-space"></div>';
-echo '<header class="position-relative pt-3 z-3 box-shadow bg-white w-100" style="top:0;left:0;">';
+echo '<header class="position-relative pt-3 box-shadow bg-white w-100" style="top:0;left:0;z-index:10;">';
 
 echo '<div class="nav">';
 echo '<div class="container">';
@@ -97,6 +97,7 @@ echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','sty
 
 </header>
 <?php
+if(is_front_page()):
 echo '<section class="hero position-relative">';
 $globalPlaceholderImg = get_field('global_placeholder_image','options');
 if(is_page()){
@@ -152,6 +153,7 @@ echo '</div>';
 // }
 
 echo '</section>';
+endif;
 
 echo '<div class="w-100" style="background: rgb(121,1,3);
 background: linear-gradient(0deg, rgba(121,1,3,1) 0%, rgba(0,0,0,1) 100%);height:50px;"></div>';
