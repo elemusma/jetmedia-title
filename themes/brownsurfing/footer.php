@@ -37,7 +37,7 @@ echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto']);
     <div class="container">
     <div class="row">
     <div class="col-12">
-    <p><small><em>Copyright &copy;2021. Please do not copy any of the text, images or any of  the other <a title="Affordable custom website development and design in Denver" href="https://brownsurfing.com/" target="_blank" rel="nofollow noreferrer noopener" class="text-black">website development</a>'s work.</em></small></p>
+    <p><small><em>Copyright &copy;2022. Please do not copy any of the text, images or any of  the other <a title="Affordable custom website development and design in Denver" href="https://brownsurfing.com/" target="_blank" rel="nofollow noreferrer noopener" class="text-black">website development</a>'s work.</em></small></p>
     </div>
     </div>
     </div>
