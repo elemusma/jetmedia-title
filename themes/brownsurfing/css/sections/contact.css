@@ -18,8 +18,16 @@ input.gform_button.button:hover {
   border-color: var(--accent-secondary);
 }
 
-.gform_footer.top_label {
+/* .gform_footer.top_label {
   margin-bottom: -90px !important;
+} */
+input[type="checkbox"] {
+  width: unset;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"]~label {
+  margin-top: 0;
 }
 
 input,
