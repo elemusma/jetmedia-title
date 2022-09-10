@@ -67,36 +67,36 @@ echo '</div>';
 // </div>
 // </a>
 // </div>
-?>
-<div id="navMenuOverlay" class="position-fixed z-2"></div>
-<div class="col-md-9 nav-items bg-white desktop-hidden" id="navItems">
 
-<div class="pt-5 pb-5">
-<div class="close-menu">
-<div>
-<span id="navMenuClose" class="close h1">X</span>
-</div>
-</div>
-<a href="<?php echo home_url(); ?>">
-<?php 
-$logo = get_field('logo','options'); 
-if($logo){
-echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:250px;']);
-}
-?>
-</a>
-</div>
-<?php wp_nav_menu(array(
-'menu' => 'primary',
-'menu_class'=>'menu d-flex flex-wrap list-unstyled justify-content-center mb-0'
-)); ?>
-</div>
-</div>
-</div>
-</div>
+// echo '<div id="navMenuOverlay" class="position-fixed z-2"></div>';
+// echo '<div class="col-md-9 nav-items bg-white desktop-hidden" id="navItems">';
 
-</header>
-<?php
+// echo '<div class="pt-5 pb-5">';
+// echo '<div class="close-menu">';
+// echo '<div>';
+// echo '<span id="navMenuClose" class="close h1">X</span>';
+// echo '</div>';
+// echo '</div>';
+// echo '<a href="' . home_url() . '">';
+
+// $logo = get_field('logo','options'); 
+// if($logo){
+// echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:250px;']);
+// }
+
+// echo '</a>';
+// echo '</div>';
+//     wp_nav_menu(array(
+//     'menu' => 'primary',
+//     'menu_class'=>'menu d-flex flex-wrap list-unstyled justify-content-center mb-0'
+//     ));
+// echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+
+echo '</header>';
+
 if(is_front_page()):
 echo '<section class="hero position-relative">';
 $globalPlaceholderImg = get_field('global_placeholder_image','options');
