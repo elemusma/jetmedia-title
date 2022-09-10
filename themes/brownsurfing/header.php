@@ -54,7 +54,7 @@ echo '<div class="bg-gray w-100" style="height:2px;"></div>';
 echo '<div class="col-12">';
 wp_nav_menu(array(
     'menu' => 'primary',
-    'menu_class'=>'menu d-flex flex-wrap list-unstyled justify-content-between mb-0'
+    'menu_class'=>'menu d-flex flex-wrap list-unstyled justify-content-center mb-0'
     )); 
 echo '</div>';
 
