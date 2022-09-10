@@ -28,11 +28,11 @@ echo '<a href="' . home_url() . '">';
 
 $logo = get_field('logo','options'); 
 if($logo){
-echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:300px;']); 
+echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','style'=>'max-width:225px;']); 
 }
 echo '</a>';
 
-echo '<p>' . get_bloginfo('description') . '</p>';
+echo '<p class="small">' . get_bloginfo('description') . '</p>';
 
 echo '</div>';
 
@@ -58,16 +58,16 @@ wp_nav_menu(array(
     )); 
 echo '</div>';
 
+// <div class="col-lg-4 col-6 desktop-hidden">
+// <a id="navToggle" class="nav-toggle">
+// <div>
+// <div class="line-1 bg-accent"></div>
+// <div class="line-2 bg-accent"></div>
+// <div class="line-3 bg-accent"></div>
+// </div>
+// </a>
+// </div>
 ?>
-<div class="col-lg-4 col-6 desktop-hidden">
-<a id="navToggle" class="nav-toggle">
-<div>
-<div class="line-1 bg-accent"></div>
-<div class="line-2 bg-accent"></div>
-<div class="line-3 bg-accent"></div>
-</div>
-</a>
-</div>
 <div id="navMenuOverlay" class="position-fixed z-2"></div>
 <div class="col-md-9 nav-items bg-white desktop-hidden" id="navItems">
 
