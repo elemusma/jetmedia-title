@@ -32,7 +32,7 @@ echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','sty
 }
 echo '</a>';
 
-echo '<p class="small">' . get_bloginfo('description') . '</p>';
+echo '<p class="small">' . get_field('website_tagline','options') . '</p>';
 
 echo '</div>';
 
@@ -119,7 +119,7 @@ echo '<div class="position-relative">';
 echo '<div class="container">';
 echo '<div class="row">';
 echo '<div class="col-12">';
-echo '<h2 class="pt-3 pb-3 mb-0 h4">Hallmark Abstract Service is Your One-Stop Title Insurance Provider for Residential and Commercial Real Estate Transactions in New York State</h2>';
+echo '<h1 class="pt-3 pb-3 mb-0 h4">' . get_field('website_motto','options') . '</h1>';
 echo '</div>';
 echo '</div>';
 echo '</div>';
